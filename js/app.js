@@ -1,6 +1,6 @@
 // Toggle theme
 function toggleTheme() {
-    let theme = document.querySelector('link');
+    const theme = document.querySelector('link');
     console.log(theme);
     if (theme.getAttribute('href') === 'https://card-input.netlify.app/lighttheme.css') {
         console.log('light');
