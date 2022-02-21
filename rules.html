@@ -28,14 +28,20 @@
             <!-- logo -->
             <a href="index.html">
                 <img src="./assets/logo.png" alt="logo" class="logo">
-            </a>
-            <form class="searchbar">
-                <input type="text" placeholder="Search">
-                <button class="btn-icon" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-            <ul class="no-list-style">
+            </a> 
+            <ul class="no-list-style nav__list--static">
                 <li>
-                    <a href="logout.html" class="btn btn-transparent-black-br">Logout</a>
+                    <a href="logout.html" class="no-text-underline">
+                        <button class="btn btn-transparent-black-br">
+                            Logout
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <button class="theme-toggle btn btn-transparent-black-br"
+                        data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                        Toggle Theme
+                    </button>
                 </li>
             </ul>
         </nav>

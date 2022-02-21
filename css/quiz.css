@@ -11,6 +11,10 @@
     margin-left: auto;
 }
 
+.alert-secondary{
+    color: var(--color-complementary);
+}
+
 .quiz__container{
     width: 80%;
     max-width: 40rem;
