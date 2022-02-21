@@ -17,7 +17,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/quiz.css">  
+    <link rel="stylesheet" href="css/result.css">  
 </head>
 
 <body>
@@ -43,25 +44,17 @@
 
         <!-- Main starts -->
         <main class="main__container">
-            <header class="quiz__header">
-                <div class="timer">
-                    <div class="timer__text">
-                        Time Left:
-                        <span id="seconds">00</span>
-                    </div>
-                </div>
-                <div>
-                    question: <span id="questionNumber">5</span>/5
-                </div>
-            </header>
+            <h1 class="large-title">
+                Good job!! 🎉🎉
+            </h1>
+            <h3>Final Score:3/6</h3>
             <section class="quiz__container">
                 <div class="quiz__content">
                     <h2>What is Pam's daughter's name?</h2>
                     <ul class="quiz__options no-list-style">
                         <li>
-                            <span class="alert alert-danger">
+                            <span class="alert alert-secondary">
                                 Sara
-                                <span><i class="fas fa-close"></i></span>
                             </span>
                         </li>
                         <li>
@@ -81,7 +74,33 @@
                             </span>
                         </li>
                     </ul>
-                    <a href="result.html" class="btn btn-primary">End Quiz</a>
+                </div>
+                <div class="quiz__content">
+                    <h2>Which branch does Michael belong to?</h2>
+                    <ul class="quiz__options no-list-style">
+                        <li>
+                            <span class="alert alert-success">
+                                Scranton
+                                <span><i class="fas fa-check"></i></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="alert alert-secondary">
+                                Hampton
+                            </span>
+                        </li>
+                        <li>
+                            <span class="alert alert-danger">
+                                Scrampton
+                                <span><i class="fas fa-close"></i></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="alert alert-secondary">
+                                Utica  
+                            </span>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>

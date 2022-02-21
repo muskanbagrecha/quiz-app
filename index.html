@@ -13,7 +13,8 @@
     <!-- CSS -->
 
     <!-- Component Library -->
-    <link rel="stylesheet" href="https://card-input.netlify.app/lighttheme.css">
+    <!-- <link rel="stylesheet" href="https://card-input.netlify.app/lighttheme.css"> -->
+    <link class="theme" rel="stylesheet" type="text/css" href="https://card-input.netlify.app/lighttheme.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -32,11 +33,16 @@
                 <input type="text" placeholder="Search">
                 <button class="btn-icon" type="submit"><i class="fas fa-search"></i></button>
             </form>
-            <ul class="no-list-style">
+
+            <ul class="no-list-style nav-list">
                 <li>
-                    <a href="login.html" class="btn btn-primary">Login</a>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleTheme()">Switch Theme</a>
                 </li>
             </ul>
+
         </nav>
         <!-- Navbar ends -->
 
@@ -58,8 +64,7 @@
                 <a href="quiz-types.html">
                     <div class="card card-vertical category__card">
                         <div class="card__img">
-                            <img src="./assets/tv-show.jpg"
-                                alt="img" class="img-responsive">
+                            <img src="./assets/tv-show.jpg" alt="img" class="img-responsive">
                         </div>
                         <div class="card__content">
                             <div class="card__CTA">
@@ -71,8 +76,7 @@
                 <a href="quiz-types.html">
                     <div class="card card-vertical category__card">
                         <div class="card__img">
-                            <img src="./assets/tv-show.jpg"
-                                alt="img" class="img-responsive">
+                            <img src="./assets/tv-show.jpg" alt="img" class="img-responsive">
                         </div>
                         <div class="card__content">
                             <div class="card__CTA">
@@ -84,8 +88,7 @@
                 <a href="quiz-types.html">
                     <div class="card card-vertical category__card">
                         <div class="card__img">
-                            <img src="./assets/tv-show.jpg"
-                                alt="img" class="img-responsive">
+                            <img src="./assets/tv-show.jpg" alt="img" class="img-responsive">
                         </div>
                         <div class="card__content">
                             <div class="card__CTA">
@@ -115,6 +118,18 @@
 
         <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
         <script src="./js/app.js"></script>
+        <script>
+            const themeBtn = document.querySelector(".theme-button");
+
+            function toggleTheme() {
+                let theme = document.querySelector(".theme");
+                if (theme.getAttribute('href') == 'https://card-input.netlify.app/lighttheme.css') {
+                    theme.setAttribute("href", 'https://card-input.netlify.app/darktheme.css');
+                } else {
+                    theme.setAttribute('href', 'https://card-input.netlify.app/lighttheme.css')
+                }
+            }
+        </script>
     </div>
 </body>
 
