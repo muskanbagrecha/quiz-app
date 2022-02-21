@@ -8,7 +8,11 @@ Badminton Quizzeria is a badminton based quiz. Test your badminton knowledge and
 
 ## Demo
 
- 
+
+
+https://user-images.githubusercontent.com/46674359/155028635-3c931022-efba-4686-a9e9-2f54db44057e.mp4
+
+
 
 ## Features and Functionalities
 
