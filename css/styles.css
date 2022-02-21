@@ -19,9 +19,10 @@ html {
 }
 
 /* Nav extra customizations */
-nav{
+nav {
     padding: 0 1rem;
 }
+
 .searchbar {
     display: flex;
     align-items: center;
@@ -29,7 +30,7 @@ nav{
 }
 
 .searchbar input {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
     height: 2.5rem;
     border: none;
     border-radius: 5px;
@@ -100,19 +101,22 @@ nav{
 
 /* Categories */
 
-.categories__section, .quiz__section{
+.categories__section,
+.quiz__section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 4rem;
 }
 
-.categories__section a, .quiz__section a, .rules__section a {
+.categories__section a,
+.quiz__section a,
+.rules__section a {
     text-decoration: none;
     color: var(--color-complementary);
 }
 
-.categories__header{
+.categories__header {
     width: 100%;
 }
 
@@ -122,12 +126,12 @@ nav{
     justify-content: center;
 }
 
-.category__card{
+.category__card {
     opacity: 0.8;
     transition: opacity 0.3s;
 }
 
-.category__card:hover{
+.category__card:hover {
     opacity: 1;
     cursor: pointer;
 }
@@ -171,4 +175,30 @@ footer {
 .copyright {
     font-size: var(--fsize-200);
     color: rgba(var(--color-complementary-values), 0.8);
+}
+
+.btn-transparent-black-br {
+    background: transparent;
+    border: 2px solid var(--color-complementary);
+    color: var(--color-complementary);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease-in;
+}
+
+.btn-transparent-black-br:hover {
+    background-color: var(--color-primary);
+}
+
+.no-text-underline {
+    text-decoration: none;
+}
+
+.nav__list--static {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
 }

@@ -1,6 +1,6 @@
 ## Quiz App
 
-Badminton Quizzeria is a badminton based quiz. Test your badminton knowledge and prove yourself a badminton ninja. The website is in progress and right now only contains screens built in HTML and CSS and has used [Shuttle UI](https://shuttleui.netlify.app/) components.
+Badminton Quizzeria is a badminton based quiz. Test your badminton knowledge and prove yourself a badminton ninja. The website is in progress and right now only contains screens built in HTML and CSS and has used [Fashgram UI](#) components.
 
 ## Author
 
@@ -8,7 +8,7 @@ Badminton Quizzeria is a badminton based quiz. Test your badminton knowledge and
 
 ## Demo
 
-- 
+ 
 
 ## Features and Functionalities
 
@@ -31,16 +31,35 @@ Badminton Quizzeria is a badminton based quiz. Test your badminton knowledge and
 ### 4. Quiz page
 
 - Navigate by accepting rules
-- Quiz page renders the quiz (one question at a time)
+- Quiz page renders the quiz (one question at a time). It is of MCQ type. 
 
 ### 5. Results 
 
 - Navigate by ending quiz
-- Shows the total score and the summary of all the answers.
+- Shows the total score and the summary of all the answers
+
+### 6. Login Page
+
+- Login by clicking the login button in the header.
+- Input: email, password
+- Remember me 
+- Forgot password
+
+### 7. Signup Page
+
+- On login page, I can select create new account option which will redirect me to signup.
+- Input Name, email, password, confirm password
+- Terms and conditions
+
+### 8. Logout Page
+
+- Logout button will be seen on rules or quiz section. 
 
 ## Theme
 
-This quiz app is available in two themes: dark and light. Toggle between the themes by clicking the button on the top right corner of the page. 
+- This quiz app is available in two themes: dark and light. Toggle between the themes by clicking the button on the top right corner of the page. Note, sometimes, the theme does not toggle in one click. Click atleast in such cases. This will be fixed in the next iteration. 
+
+- Implemented local storage to keep a persistant theme 
 
 ## Tech Stack
 
