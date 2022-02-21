@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fashgram - Creative Meets Fashion</title>
-    
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-        <!-- CSS -->
-    
-        <!-- Component Library -->
-        <link rel="stylesheet" href="https://card-input.netlify.app/lighttheme.css">
-    
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/login.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashgram - Creative Meets Fashion</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS -->
+
+    <!-- Component Library -->
+    <link id="active-stylesheet" href="https://deploy-preview-5--card-input.netlify.app/lighttheme.css" rel="stylesheet"
+    type="text/css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
 
 <body>
 
@@ -30,42 +31,52 @@
             <a href="index.html">
                 <img src="./assets/logo.png" alt="logo" class="logo">
             </a>
-            <ul class="no-list-style">
+            <ul class="no-list-style nav__list--static">
                 <li>
-                    <a href="index.html" class="btn btn-primary">Home</a>
+                    <a href="index.html" class="no-text-underline">
+                        <button class="btn btn-transparent-black-br">
+                            Home
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <button class="theme-toggle btn btn-transparent-black-br"
+                        data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                        Toggle Theme
+                    </button>
                 </li>
             </ul>
+
         </nav>
         <!-- Navbar ends -->
 
 
         <!-- Login container starts -->
-        <main class="login__container">
+        <main class="main__container">
+            <div class="login__container">
+                <h3>LOGIN</h3>
+                <form class="input-form">
+                    <label class="label" for="email">Email Id<span class="red">*</span></label>
+                    <input type="text" name="email" placeholder="abc@gmail.com" required>
 
-            <h3>LOGIN</h3>
+                    <label class="label" for="password">Password<span class="red">*</label>
+                    <input type="text" name="password" placeholder="*********" required>
 
-            <div class="input-form">
-                <label class="label" for="email">Email Id<span class="red">*</span></label>
-                <input type="text" name="email" placeholder="abc@gmail.com" required>
-
-                <label class="label" for="password">Password</label>
-                <input type="text" name="password" placeholder="*********" required>
-
-                <div class="form-checks">
-                    <div class="flex-align-center">
-                        <label for="remember-me"></label>
-                        <input type="checkbox" name="remember-me" id="remember-me">
-                        <span>Remember Me</span>
+                    <div class="form-checks">
+                        <div class="flex-align-center">
+                            <label for="remember-me"></label>
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <span>Remember Me</span>
+                        </div>
+                        <a class="btn-link-text">Forgot Password</a>
                     </div>
-                    <a class="btn-link-text">Forgot Password</a>
-                </div>
 
 
-                <button class="btn btn-primary">LOGIN</button>
-                <a href="signup.html" class="btn btn-link-text align-center">Create new account
-                    <i class="fas fa-chevron-right"></i>
-                </a>
-
+                    <button class="btn btn-primary">LOGIN</button>
+                    <a href="signup.html" class="btn btn-link-text align-center">Create new account
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </form>
             </div>
         </main>
 

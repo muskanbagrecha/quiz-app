@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashgram - Creative Meets Fashion</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS -->
+
+    <!-- Component Library -->
+    <link id="active-stylesheet" href="https://deploy-preview-5--card-input.netlify.app/lighttheme.css" rel="stylesheet"
+    type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navbar starts-->
+        <nav class="navigation">
+            <!-- logo -->
+            <a href="index.html">
+                <img src="./assets/logo.png" alt="logo" class="logo">
+            </a>
+            <ul class="no-list-style nav__list--static">
+                <li>
+                    <a href="index.html" class="no-text-underline">
+                        <button class="btn btn-transparent-black-br">
+                            Home
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <button class="theme-toggle btn btn-transparent-black-br"
+                        data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                        Toggle Theme
+                    </button>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Navbar ends -->
+
+
+        <!-- Signup container starts -->
+        <div class="main__container">
+            <main class="signup__container">
+                <h3>SIGN UP</h3>
+                <form class="input-form">
+                    <label class="label" for="email">Name<span class="red">*</span></label>
+                    <input type="text" name="email" placeholder="Enter your name" required>
+                    <label class="label" for="email">Email Id<span class="red">*</span></label>
+                    <input type="text" name="email" placeholder="abc@gmail.com" required>
+                    <label class="label" for="password">Password<span class="red">*</label>
+                    <input type="password" name="password" placeholder="*********" required>
+                    <label class="label" for="password">Confirm Password<span class="red">*</label>
+                    <input type="password" name="password" placeholder="*********" required>
+
+                    <div class="form-checks flex-align-center">
+                        <input type="checkbox" name="terms-conditions" />
+                        <label for="terms-conditions">
+                            <div>I agree to the <a href="#" class="btn-link-text">Terms and Conditions</a></div>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary">Sign Up</button>
+                    <a href="login.html" class="btn btn-link-text align-center"> Already registered? Log in<i
+                            class="fas fa-chevron-right"></i>
+                    </a>
+                </form>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
+            <ul class="footer__list">
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-hashnode" aria-hidden="true"></i></a></li>
+            </ul>
+            <p class="copyright">© Fashgram'22</p>
+        </footer>
+        <!-- Footer ends -->
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/navigation.js"></script>
+</body>
+
+</html>

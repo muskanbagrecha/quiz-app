@@ -13,7 +13,7 @@
     <!-- CSS -->
 
     <!-- Component Library -->
-    <link rel="stylesheet" href="https://card-input.netlify.app/lighttheme.css">
+    <link id="active-stylesheet" href="https://deploy-preview-5--card-input.netlify.app/lighttheme.css" rel="stylesheet" type="text/css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -29,15 +29,22 @@
             <a href="index.html">
                 <img src="./assets/logo.png" alt="logo" class="logo">
             </a>
-            <form class="searchbar">
-                <input type="text" placeholder="Search">
-                <button class="btn-icon" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-            <ul class="no-list-style">
+            <ul class="no-list-style nav__list--static">
                 <li>
-                    <a href="logout.html" class="btn btn-primary">Logout</a>
+                    <a href="logout.html" class="no-text-underline">
+                        <button class="btn btn-transparent-black-br">
+                            Logout
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <button class="theme-toggle btn btn-transparent-black-br"
+                        data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                        Toggle Theme
+                    </button>
                 </li>
             </ul>
+
         </nav>
         <!-- Navbar ends -->
 
@@ -81,7 +88,7 @@
                             </span>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-primary">End Quiz</a>
+                    <a href="result.html" class="btn btn-primary">End Quiz</a>
                 </div>
             </section>
         </main>
