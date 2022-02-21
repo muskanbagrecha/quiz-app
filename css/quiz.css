@@ -1,0 +1,41 @@
+.alert::before{
+    color: transparent;
+    margin: 0;
+}
+
+.alert{
+    padding: 1rem 2rem;
+}
+
+.alert span{
+    margin-left: auto;
+}
+
+.quiz__container{
+    width: 80%;
+    max-width: 40rem;
+}
+
+.quiz__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.quiz__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 0 0;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.quiz__options{
+    width: 100%;
+    padding: 0;
+}
