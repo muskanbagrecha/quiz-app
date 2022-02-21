@@ -17,7 +17,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/rules.css">
+    <link rel="stylesheet" href="css/quiz.css">
 </head>
 
 <body>
@@ -41,41 +41,51 @@
         </nav>
         <!-- Navbar ends -->
 
+        <!-- Main starts -->
         <main class="main__container">
-
-
-            <!-- Rules Section -->
-            <main class="rules__section">
-                <div class="categories__header">
-                    <h2 class="medium-title">Rules to Follow</h2>
+            <header class="quiz__header">
+                <div class="timer">
+                    <div class="timer__text">
+                        Time Left:
+                        <span id="seconds">00</span>
+                    </div>
                 </div>
-                <article class="card card-vertical rules__card">
-                    <div class="card__content">
-                        <ol>
-                            <li>
-                                You will have only <span class="highlight">15 seconds</span> to attempt a single
-                                question.
-                            </li>
-                            <li>
-                                You will be given only <span class="highlight">1 attempt</span> to answer the question.
-                            </li>
-                            <li>
-                                You will be awarded <span class="highlight">3 points</span> for each correct answer.
-                            </li>
-                            <li>
-                                You will be negatively marked by <span class="highlight">-1 points</span> for each wrong
-                                answer.
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="card__CTA">
-                        <a href="quiz.html" class="btn btn-primary">Let's go</a>
-                    </div>
-                </article>
-            </main>
-            <!-- Categories Section ends -->
-
+                <div>
+                    question: <span id="questionNumber">5</span>/5
+                </div>
+            </header>
+            <section class="quiz__container">
+                <div class="quiz__content">
+                    <h2>What is Pam's daughter's name?</h2>
+                    <ul class="quiz__options no-list-style">
+                        <li>
+                            <span class="alert alert-danger">
+                                Sara
+                                <span><i class="fas fa-close"></i></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="alert alert-secondary">
+                                Nora
+                            </span>
+                        </li>
+                        <li>
+                            <span class="alert alert-success">
+                                Cece
+                                <span><i class="fas fa-check"></i></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="alert alert-secondary">
+                                Meredith
+                            </span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">End Quiz</a>
+                </div>
+            </section>
         </main>
+        <!-- Main ends -->
 
         <!-- Footer -->
         <footer class="footer">
