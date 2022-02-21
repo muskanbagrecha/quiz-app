@@ -17,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/rules.css">
 </head>
 
 <body>
@@ -41,60 +42,37 @@
         <!-- Navbar ends -->
 
         <main class="main__container">
-            <!-- Hero section -->
-            <section class="hero">
-                <div class="hero__heading">
-                    <h1 class="large-title">Quiz App</h1>
-                </div>
-                <a href="#categories" class="btn btn-black-no-br">Explore</a>
-            </section>
-            <!-- Hero ends -->
 
-            <!-- Categories Section -->
-            <section class="categories__section" id="categories">
+
+            <!-- Rules Section -->
+            <main class="rules__section">
                 <div class="categories__header">
-                    <h2 class="medium-title">Featured Categories</h2>
+                    <h2 class="medium-title">Rules to Follow</h2>
                 </div>
-                <a href="quiz-types.html">
-                    <div class="card card-vertical category__card">
-                        <div class="card__img">
-                            <img src="./assets/tv-show.jpg"
-                                alt="img" class="img-responsive">
-                        </div>
-                        <div class="card__content">
-                            <div class="card__CTA">
-                                <a href="quiz-types.html" class="btn btn-primary">TV Shows</a>
-                            </div>
-                        </div>
+                <article class="card card-vertical rules__card">
+                    <div class="card__content">
+                        <ol>
+                            <li>
+                                You will have only <span class="highlight">15 seconds</span> to attempt a single
+                                question.
+                            </li>
+                            <li>
+                                You will be given only <span class="highlight">1 attempt</span> to answer the question.
+                            </li>
+                            <li>
+                                You will be awarded <span class="highlight">3 points</span> for each correct answer.
+                            </li>
+                            <li>
+                                You will be negatively marked by <span class="highlight">-1 points</span> for each wrong
+                                answer.
+                            </li>
+                        </ol>
                     </div>
-                </a>
-                <a href="quiz-types.html">
-                    <div class="card card-vertical category__card">
-                        <div class="card__img">
-                            <img src="./assets/tv-show.jpg"
-                                alt="img" class="img-responsive">
-                        </div>
-                        <div class="card__content">
-                            <div class="card__CTA">
-                                <a href="quiz-types.html" class="btn btn-primary">TV Shows</a>
-                            </div>
-                        </div>
+                    <div class="card__CTA">
+                        <a href="" class="btn btn-primary">Let's go</a>
                     </div>
-                </a>
-                <a href="quiz-types.html">
-                    <div class="card card-vertical category__card">
-                        <div class="card__img">
-                            <img src="./assets/tv-show.jpg"
-                                alt="img" class="img-responsive">
-                        </div>
-                        <div class="card__content">
-                            <div class="card__CTA">
-                                <a href="quiz-types.html" class="btn btn-primary">TV Shows</a>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </section>
+                </article>
+            </main>
             <!-- Categories Section ends -->
 
         </main>
