@@ -1,8 +1,8 @@
 ## Quiz App
 
-This quiz app tests you based on various categories. So whether you are a movie buff, a sports enthusiast or tech geek, take this quiz and share your score with us. This app has been created using [Fashgram-Component-Library](#).
+This quiz app tests you based on various categories. So whether you are a movie buff, a sports enthusiast or tech geek, take this quiz and share your score with us. This app has been created using [Fashgram-Component-Library](https://fashgram-ui-documentation.netlify.app/).
 
-[Live Website](fashgram-quiz.netlify.app)
+[Live Website](https://fashgram-quiz.netlify.app/)
 
 ## Author
 
@@ -24,7 +24,7 @@ https://user-images.githubusercontent.com/46674359/155028635-3c931022-efba-4686-
 - Quiz banner
 - Featured categories
 
-[Home](fashgram-quiz.netlify.app)
+[Home](https://fashgram-quiz.netlify.app/)
 
 ### 2. Quiz type page
 
@@ -88,7 +88,7 @@ https://user-images.githubusercontent.com/46674359/155028635-3c931022-efba-4686-
 - HTML
 - CSS
 - Javascript
-- Components imported from [Fashgram Component Library](#)
+- Components imported from [Fashgram Component Library](https://fashgram-ui-documentation.netlify.app/)
 
 <br>
 
