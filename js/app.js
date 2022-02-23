@@ -1,18 +1,3 @@
-// // Toggle theme
-// function toggleTheme() {
-//   const theme = document.querySelector("link");
-//   console.log(theme);
-//   if (
-//     theme.getAttribute("href") ===
-//     "https://card-input.netlify.app/lighttheme.css"
-//   ) {
-//     console.log("light");
-//     theme.setAttribute("href", "https://card-input.netlify.app/darktheme.css");
-//   } else {
-//     theme.setAttribute("href", "https://card-input.netlify.app/lighttheme.css");
-//   }
-// }
-
 /* Theme toggle */
 const themeStyle = document.querySelector(".themestyle");
 let activeSheet = document.querySelector("#active-stylesheet");
@@ -28,13 +13,13 @@ function switchStyle() {
   console.log(selectedSheet);
   if (
     selectedSheet ===
-    "https://deploy-preview-5--card-input.netlify.app/lighttheme.css"
+    "https://fashgram-ui.netlify.app/lighttheme.css"
   ) {
     selectedSheet =
-      "https://deploy-preview-5--card-input.netlify.app/darktheme.css";
+      "https://fashgram-ui.netlify.app/darktheme.css";
   } else {
     selectedSheet =
-      "https://deploy-preview-5--card-input.netlify.app/lighttheme.css";
+      "https://fashgram-ui.netlify.app/lighttheme.css";
   }
   this.setAttribute("data-stylesheet", selectedSheet);
   activeSheet.setAttribute("href", selectedSheet);
